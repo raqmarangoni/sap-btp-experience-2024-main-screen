@@ -51,9 +51,16 @@
 					</f:GridListItem>
 				</f:GridList>
 			</m:Panel>
-			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
-				<m:Title class="" text="Patrocinadores" titleStyle="H4" />
-			</l:VerticalLayout>
+			<m:VBox class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" justifyContent="SpaceBetween" height="auto">
+				<m:HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin" justifyContent="SpaceBetween" alignItems="Center">
+					<m:Title class="sapUiSmallMarginBegin" text="Patrocinadores" titleStyle="H4"/>
+					<m:Button class="sapUiMediumMarginEnd" text="Ver todos patrocinadores" type="Emphasized" width="auto" press="">
+						<m:layoutData>
+							<m:FlexItemData alignSelf="End" />
+						</m:layoutData>
+					</m:Button>
+				</m:HBox>
+			</m:VBox>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<f:GridList id="gridList" items="{/sponsors}">
 					<f:customLayout>
