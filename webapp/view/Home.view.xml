@@ -6,8 +6,15 @@
 	xmlns:f="sap.f"
 	xmlns:t="sap.tnt"
 	xmlns="sap.ui.webc.main" height="100%">
-    <m:Page id="page" title="{i18n>title}">
-				<m:content>
+	<m:Page id="page" showHeader="false">
+		<m:VBox alignItems="Center">
+			<m:Image src="../img/edificios.png" mode="Image" height="141px" width="1440px">
+				<m:layoutData>
+					<m:FlexItemData growFactor="1" />
+				</m:layoutData>
+			</m:Image>
+		</m:VBox>
+		<m:content>
 			<l:VerticalLayout class="sapUiResponsiveContentPadding" width="auto">
 				<m:Title class="sapUiResponsiveContentPadding" text="Atalhos" titleStyle="H4" />
 			</l:VerticalLayout>
@@ -68,6 +75,6 @@
 			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
 				<m:Title class="" text="Próximas Agendas" titleStyle="H4" />
 			</l:VerticalLayout>
-        </m:content>
-    </m:Page>
+		</m:content>
+	</m:Page>
 </mvc:View>
