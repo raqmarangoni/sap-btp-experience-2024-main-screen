@@ -39,17 +39,68 @@
 				<m:Title class="" text="Resumo" titleStyle="H4" />
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
-				<f:GridList id="gridList2" items="{/items}">
-					<f:GridListItem>
-						<m:VBox class="sapUiSmallMargin">
-							<m:layoutData>
-								<m:FlexItemData growFactor="1" shrinkFactor="0" />
-							</m:layoutData>
-							<m:Title text="{title}" wrapping="true" />
-							<m:Label text="{subtitle}" wrapping="true" />
-						</m:VBox>
-					</f:GridListItem>
-				</f:GridList>
+				<l:HorizontalLayout>
+				<m:VBox class="sapUiTinyMargin">
+					<l:HorizontalLayout id="TileContainerExpanded"
+										allowWrapping="true"
+										content=""
+										class="sapUiTinyMarginTopBottom">
+						<m:GenericTile header="Participantes confirmados por cadastro"
+									subheader=""
+									state="{=${state} || 'Loaded'}"
+									
+									press="press"
+									class="sapUiTinyMarginEnd"
+									>
+							<m:TileContent unit="participantes" footer="">
+								<m:NumericContent withMargin="false"
+												value=""
+												scale=""/>
+							</m:TileContent>
+						</m:GenericTile>
+					</l:HorizontalLayout>
+				</m:VBox>
+				<m:VBox class="sapUiTinyMargin">
+					<l:HorizontalLayout id="TileContainerExpanded2"
+										allowWrapping="true"
+										content=""
+										class="sapUiTinyMarginTopBottom">
+						<m:GenericTile header="Atividades programadas"
+									subheader=""
+									state="{=${state} || 'Loaded'}"
+									
+									press="press"
+									class="sapUiTinyMarginEnd"
+									>
+							<m:TileContent unit="palestras, hands-on, hackatons etc." footer="">
+								<m:NumericContent withMargin="false"
+												value=""
+												scale=""/>
+							</m:TileContent>
+						</m:GenericTile>
+					</l:HorizontalLayout>
+				</m:VBox>
+								<m:VBox class="sapUiTinyMargin">
+					<l:HorizontalLayout id="TileContainerExpanded3"
+										allowWrapping="true"
+										content=""
+										class="sapUiTinyMarginTopBottom">
+						<m:GenericTile header="Empresas participantes"
+									subheader=""
+									state="{=${state} || 'Loaded'}"
+									
+									press="press"
+									class="sapUiTinyMarginEnd"
+									>
+							<m:TileContent unit="" footer="">
+								<m:NumericContent withMargin="false"
+												value=""
+												scale=""/>
+							</m:TileContent>
+						</m:GenericTile>
+					</l:HorizontalLayout>
+				</m:VBox>
+				</l:HorizontalLayout>
 			</m:Panel>
 			<m:VBox class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" justifyContent="SpaceBetween" height="auto">
 				<m:HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin" justifyContent="SpaceBetween" alignItems="Center">
