@@ -54,7 +54,7 @@
 			<m:VBox class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" justifyContent="SpaceBetween" height="auto">
 				<m:HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin" justifyContent="SpaceBetween" alignItems="Center">
 					<m:Title class="sapUiSmallMarginBegin" text="Patrocinadores" titleStyle="H4"/>
-					<m:Button class="sapUiMediumMarginEnd" text="Ver todos patrocinadores" type="Emphasized" width="auto" press="">
+					<m:Button class="sapUiMediumMarginEnd" text="Ver todos patrocinadores" type="Emphasized" width="auto" press="onNavToSponsors">
 						<m:layoutData>
 							<m:FlexItemData alignSelf="End" />
 						</m:layoutData>

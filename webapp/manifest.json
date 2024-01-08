@@ -108,6 +108,13 @@
           "target": [
             "TargetHome"
           ]
+        },
+        {
+          "name": "Sponsors",
+          "pattern": "/sponsors",
+          "target": [
+            "Sponsors"
+          ]
         }
       ],
       "targets": {
@@ -117,6 +124,13 @@
           "clearControlAggregation": false,
           "viewId": "Home",
           "viewName": "Home"
+        },
+        "Sponsors": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Sponsors",
+          "viewName": "Sponsors"
         }
       }
     },

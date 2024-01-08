@@ -36,6 +36,10 @@ sap.ui.define([
                 };
                 const oModel = new JSONModel(sponsorsModel);
                 this.getView().setModel(oModel);
+            },
+            
+            onNavToSponsors: function(){
+                this.getOwnerComponent().getRouter().navTo("Sponsors");
             }
         });
     });
