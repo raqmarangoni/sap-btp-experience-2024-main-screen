@@ -1,7 +1,87 @@
 <mvc:View controllerName="com.lab2dev.btpexperiencemainscreen.controller.Home"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:m="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:grid="sap.ui.layout.cssgrid"
+	xmlns:f="sap.f"
+	xmlns:t="sap.tnt"
+	xmlns="sap.ui.webc.main" height="100%">
+	<m:Page id="page" showHeader="false">
+		<m:VBox alignItems="Center">
+			<m:Image src="../img/edificios.png" mode="Image" height="141px" width="1440px">
+				<m:layoutData>
+					<m:FlexItemData growFactor="1" />
+				</m:layoutData>
+			</m:Image>
+		</m:VBox>
+		<m:content>
+			<l:VerticalLayout class="sapUiResponsiveContentPadding" width="auto">
+				<m:Title class="sapUiResponsiveContentPadding" text="Atalhos" titleStyle="H4" />
+			</l:VerticalLayout>
+			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
+				<f:GridList id="gridList5" items="">
+					<f:customLayout>
+						<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fill, minmax(8rem, 1fr))" gridGap="1.0rem" />
+					</f:customLayout>
+					<f:GridListItem>
+						<m:VBox class="sapUiSmallMargin" wrap="Wrap" width="800px">
+							<m:HBox justifyContent="Start">
+								<m:VBox justifyContent="Center">
+									<m:Title text="{Empresa}" wrapping="true" />
+									<m:Label text="{Estado}" wrapping="true" />
+								</m:VBox>
+							</m:HBox>
+						</m:VBox>
+					</f:GridListItem>
+				</f:GridList>
+			</m:Panel>
+			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
+				<m:Title class="" text="Resumo" titleStyle="H4" />
+			</l:VerticalLayout>
+			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
+				<f:GridList id="gridList2" items="{/items}">
+					<f:GridListItem>
+						<m:VBox class="sapUiSmallMargin">
+							<m:layoutData>
+								<m:FlexItemData growFactor="1" shrinkFactor="0" />
+							</m:layoutData>
+							<m:Title text="{title}" wrapping="true" />
+							<m:Label text="{subtitle}" wrapping="true" />
+						</m:VBox>
+					</f:GridListItem>
+				</f:GridList>
+			</m:Panel>
+			<m:VBox class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" justifyContent="SpaceBetween" height="auto">
+				<m:HBox class="sapUiSmallMarginTop sapUiSmallMarginBegin" justifyContent="SpaceBetween" alignItems="Center">
+					<m:Title class="sapUiSmallMarginBegin" text="Patrocinadores" titleStyle="H4"/>
+					<m:Button class="sapUiMediumMarginEnd" text="Ver todos patrocinadores" type="Emphasized" width="auto" press="onNavToSponsors">
+						<m:layoutData>
+							<m:FlexItemData alignSelf="End" />
+						</m:layoutData>
+					</m:Button>
+				</m:HBox>
+			</m:VBox>
+			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
+				<f:GridList id="gridList" items="{/sponsors}">
+					<f:customLayout>
+						<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fill, minmax(18rem, 1fr))" gridGap="1.0rem" />
+					</f:customLayout>
+					<f:GridListItem>
+						<m:VBox class="sapUiSmallMargin" wrap="Wrap" width="800px">
+							<m:HBox justifyContent="Start">
+								<m:Avatar src="{Logo}" class="sapUiSmallMarginEnd" />
+								<m:VBox justifyContent="Center">
+									<m:Title text="{Empresa}" wrapping="true" />
+									<m:Label text="{Estado}" wrapping="true" />
+								</m:VBox>
+							</m:HBox>
+						</m:VBox>
+					</f:GridListItem>
+				</f:GridList>
+			</m:Panel>
+			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
+				<m:Title class="" text="Próximas Agendas" titleStyle="H4" />
+			</l:VerticalLayout>
+		</m:content>
+	</m:Page>
 </mvc:View>
