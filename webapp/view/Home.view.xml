@@ -64,15 +64,16 @@
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<f:GridList id="gridList" items="{/sponsors}">
 					<f:customLayout>
-						<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fill, minmax(18rem, 1fr))" gridGap="1.0rem" />
+						<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fill, minmax(15rem, 1fr))" gridGap="1.0rem" />
 					</f:customLayout>
 					<f:GridListItem>
 						<m:VBox class="sapUiSmallMargin" wrap="Wrap" width="800px">
 							<m:HBox justifyContent="Start">
-								<m:Avatar src="{Logo}" class="sapUiSmallMarginEnd" />
+								<m:Avatar src="{Logo}" class="sapUiSmallMarginEnd"/>
 								<m:VBox justifyContent="Center">
 									<m:Title text="{Empresa}" wrapping="true" />
 									<m:Label text="{Estado}" wrapping="true" />
+									<m:ObjectStatus class="styleObjectStatus" text="{= ${Empresa} === 'Lab2Dev' ? 'Patrocinador Principal' : '' }" inverted="true" state="Information"/>
 								</m:VBox>
 							</m:HBox>
 						</m:VBox>
