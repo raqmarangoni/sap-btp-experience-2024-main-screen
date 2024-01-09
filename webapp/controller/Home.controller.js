@@ -60,10 +60,6 @@ sap.ui.define([
                 this.getView().setModel(oModel, "combinedModel");
             },
 
-            onNavToSponsors: function () {
-                this.getOwnerComponent().getRouter().navTo("Sponsors");
-            },
-
             onNavToRegisteredParticipants: function () {
                 this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
             },
@@ -72,5 +68,12 @@ sap.ui.define([
                 this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
             },
 
+            onNavToParticipatingCompanies: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
+            onNavToSponsors: function () {
+                this.getOwnerComponent().getRouter().navTo("Sponsors");
+            },
         });
     });

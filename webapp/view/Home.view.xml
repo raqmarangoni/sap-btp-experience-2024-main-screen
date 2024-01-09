@@ -60,7 +60,7 @@
 					</m:VBox>
 					<m:VBox class="sapUiTinyMargin">
 						<l:HorizontalLayout id="ParticipatingCompaniesId" allowWrapping="true" class="sapUiTinyMarginTopBottom">
-							<m:GenericTile header="Empresas participantes" press="" class="sapUiTinyMarginEnd">
+							<m:GenericTile header="Empresas participantes" press="onNavToParticipatingCompanies" class="sapUiTinyMarginEnd">
 								<m:TileContent footer="empresas">
 									<m:NumericContent withMargin="false" value="{combinedModel>/participatingCompanies/kpivalue}" valueColor="{combinedModel>/participatingCompanies/color}" indicator="{combinedModel>/indicator}" scale="{combinedModel>/scale}" />
 								</m:TileContent>
