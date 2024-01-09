@@ -34,11 +34,38 @@ sap.ui.define([
                         },
                     ]
                 };
-                const oModel = new JSONModel(sponsorsModel);
-                this.getView().setModel(oModel);
+
+                const tilesModel = {
+                    tiles: [
+                        {
+                            title: "Participantes confirmados por cadastro",
+                            footer: "participantes",
+                            kpivalue: 120,
+                            color: "Good"
+                        },
+                        {
+                            title: "Atividades programadas",
+                            footer: "palestras, hands-on, hackatons etc.",
+                            kpivalue: 50,
+                            color: "Good",
+                        },
+                        {
+                            title: "Empresas Participantes",
+                            footer: "participantes",
+                            kpivalue: 25,
+                            color: "Good",
+                        }
+                    ]
+                };
+ 
+                const oCombinedModel = new JSONModel({
+                    sponsors: sponsorsModel.sponsors,
+                    tiles: tilesModel.tiles
+                })
+                this.getView().setModel(oCombinedModel, "combinedModel");
             },
-            
-            onNavToSponsors: function(){
+
+            onNavToSponsors: function () {
                 this.getOwnerComponent().getRouter().navTo("Sponsors");
             }
         });
