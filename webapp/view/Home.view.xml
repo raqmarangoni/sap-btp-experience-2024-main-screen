@@ -7,12 +7,13 @@
 	xmlns:t="sap.tnt"
 	xmlns="sap.ui.webc.main" height="100%">
 	<m:Page id="page" showHeader="false">
-		<m:VBox alignItems="Center">
-			<m:Image src="../img/edificios.png" mode="Image" height="141px" width="1440px">
-				<m:layoutData>
-					<m:FlexItemData growFactor="1" />
-				</m:layoutData>
-			</m:Image>
+		<m:VBox xmlns:m="sap.m" class="backgroundContainer" justifyContent="Center" alignItems="Center" height="141px" width="100%">
+			<m:FlexBox class="textContainer" alignItems="Center" justifyContent="Center">
+				<m:Image src="../img/edificios.png" mode="Image" height="100%" width="100%" />
+				<m:VBox class="overlayTextContainer" alignItems="Center" justifyContent="Center">
+					<m:Title text="Bem vindo, Usuário!" class="overlayText" />
+				</m:VBox>
+			</m:FlexBox>
 		</m:VBox>
 		<m:content>
 			<l:VerticalLayout class="sapUiResponsiveContentPadding" width="auto">
