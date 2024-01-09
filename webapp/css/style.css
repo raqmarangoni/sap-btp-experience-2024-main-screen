@@ -21,3 +21,32 @@
     align-items: center;
     flex: 1 0 0;
 }
+
+.backgroundContainer {
+    position: relative;
+}
+
+.textContainer {
+    position: relative;
+}
+
+.overlayTextContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlayText {
+    z-index: 1;
+    white-space: nowrap;
+    color: #FFF;
+    text-align: center;
+    font-family: 72;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
