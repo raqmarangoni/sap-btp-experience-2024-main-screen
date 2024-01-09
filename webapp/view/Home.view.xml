@@ -40,25 +40,34 @@
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<l:HorizontalLayout>
-				<m:VBox class="sapUiTinyMargin">
-					<l:HorizontalLayout id="TileContainerExpanded"
-										allowWrapping="true"
-										content="{combinedModel>/tiles}"
-										class="sapUiTinyMarginTopBottom">
-						<m:GenericTile header="{combinedModel>title}"
-									press="press"
-									class="sapUiTinyMarginEnd"
-									>
-								<m:TileContent footer="{combinedModel>footer}">
-							<m:NumericContent withMargin="false"
-							                value="{combinedModel>kpivalue}"
-							                valueColor="{combinedModel>color}"
-							                indicator="{combinedModel>trend}"
-							                scale="{combinedModel>scale}" />
-							</m:TileContent>
-						</m:GenericTile>
-					</l:HorizontalLayout>
-				</m:VBox>
+
+					<m:VBox class="sapUiTinyMargin">
+						<l:HorizontalLayout id="RegisteredParticipants" allowWrapping="true" class="sapUiTinyMarginTopBottom">
+							<m:GenericTile header="Participantes confirmados por cadastro" press="press" class="sapUiTinyMarginEnd">
+								<m:TileContent footer="participantes">
+									<m:NumericContent withMargin="false" value="{combinedModel>/registeredParticipants/kpivalue}" valueColor="{combinedModel>/registeredParticipants/color}" indicator="{combinedModel>/indicator}" scale="{combinedModel>/scale}" />
+								</m:TileContent>
+							</m:GenericTile>
+						</l:HorizontalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMargin">
+						<l:HorizontalLayout id="ScheduledActivities" allowWrapping="true" class="sapUiTinyMarginTopBottom">
+							<m:GenericTile header="Atividades programadas" press="press" class="sapUiTinyMarginEnd">
+								<m:TileContent footer="participantes">
+									<m:NumericContent withMargin="false" value="{combinedModel>/scheduledActivities/kpivalue}" valueColor="{combinedModel>/scheduledActivities/color}" indicator="{combinedModel>/indicator}" scale="{combinedModel>/scale}" />
+								</m:TileContent>
+							</m:GenericTile>
+						</l:HorizontalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMargin">
+						<l:HorizontalLayout id="ParticipatingCompanies" allowWrapping="true" class="sapUiTinyMarginTopBottom">
+							<m:GenericTile header="Atividades programadas" press="press" class="sapUiTinyMarginEnd">
+								<m:TileContent footer="participantes">
+									<m:NumericContent withMargin="false" value="{combinedModel>/participatingCompanies/kpivalue}" valueColor="{combinedModel>/participatingCompanies/color}" indicator="{combinedModel>/indicator}" scale="{combinedModel>/scale}" />
+								</m:TileContent>
+							</m:GenericTile>
+						</l:HorizontalLayout>
+					</m:VBox>
 				</l:HorizontalLayout>
 			</m:Panel>
 			<m:VBox class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" justifyContent="SpaceBetween" height="auto">
