@@ -68,5 +68,9 @@ sap.ui.define([
                 this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
             },
 
+            onNavToScheduledActivities: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
         });
     });
