@@ -10,6 +10,9 @@ sap.ui.define([
 
         return Controller.extend("com.lab2dev.btpexperiencemainscreen.controller.Home", {
             onInit: function () {
+
+                const userName = sap.ushell.Container.getService("UserInfo").getFirstName()
+
                 const sponsorsModel = {
                     sponsors: [
                         {
@@ -55,10 +58,13 @@ sap.ui.define([
                     sponsors: sponsorsModel.sponsors,
                     registeredParticipants,
                     scheduledActivities,
-                    participatingCompanies
+                    participatingCompanies,
+                    userName
                 });
                 this.getView().setModel(oModel, "combinedModel");
             },
+
+
 
             onNavToRegisteredParticipants: function () {
                 this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
