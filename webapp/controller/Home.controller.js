@@ -35,34 +35,29 @@ sap.ui.define([
                     ]
                 };
 
-                const tilesModel = {
-                    tiles: [
-                        {
-                            title: "Participantes confirmados por cadastro",
-                            footer: "participantes",
-                            kpivalue: 120,
-                            color: "Good"
-                        },
-                        {
-                            title: "Atividades programadas",
-                            footer: "palestras, hands-on, hackatons etc.",
-                            kpivalue: 50,
-                            color: "Good",
-                        },
-                        {
-                            title: "Empresas Participantes",
-                            footer: "participantes",
-                            kpivalue: 25,
-                            color: "Good",
-                        }
-                    ]
+                const oFixedTileContent = {
+                    registeredParticipants:{
+                        kpivalue: 120,
+                        color: "Good"
+                    },
+                    scheduledActivities: {
+                        kpivalue: 40,
+                        color: "Good"
+                    },
+                    participatingCompanies: {
+                        kpivalue: 80,
+                        color: "Good"
+                    }
                 };
- 
-                const oCombinedModel = new JSONModel({
+
+                const { registeredParticipants, scheduledActivities, participatingCompanies} = oFixedTileContent
+                const oModel = new JSONModel({
                     sponsors: sponsorsModel.sponsors,
-                    tiles: tilesModel.tiles
-                })
-                this.getView().setModel(oCombinedModel, "combinedModel");
+                    registeredParticipants,
+                    scheduledActivities,
+                    participatingCompanies
+                });
+                this.getView().setModel(oModel, "combinedModel");
             },
 
             onNavToSponsors: function () {
