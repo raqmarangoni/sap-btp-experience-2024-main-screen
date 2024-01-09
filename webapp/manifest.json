@@ -129,6 +129,20 @@
           "target": [
             "ScheduledActivities"
           ]
+        },
+        {
+          "name": "ScheduledActivities",
+          "pattern": "/scheduledActivities",
+          "target": [
+            "ScheduledActivities"
+          ]
+        },
+        {
+          "name": "ParticipatingCompanies",
+          "pattern": "/participatingCompanies",
+          "target": [
+            "ParticipatingCompanies"
+          ]
         }
       ],
       "targets": {
