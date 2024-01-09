@@ -43,59 +43,18 @@
 				<m:VBox class="sapUiTinyMargin">
 					<l:HorizontalLayout id="TileContainerExpanded"
 										allowWrapping="true"
-										content=""
+										content="{combinedModel>/tiles}"
 										class="sapUiTinyMarginTopBottom">
-						<m:GenericTile header="Participantes confirmados por cadastro"
-									subheader=""
-									state="{=${state} || 'Loaded'}"
-									
+						<m:GenericTile header="{combinedModel>title}"
 									press="press"
 									class="sapUiTinyMarginEnd"
 									>
-							<m:TileContent unit="participantes" footer="">
-								<m:NumericContent withMargin="false"
-												value=""
-												scale=""/>
-							</m:TileContent>
-						</m:GenericTile>
-					</l:HorizontalLayout>
-				</m:VBox>
-				<m:VBox class="sapUiTinyMargin">
-					<l:HorizontalLayout id="TileContainerExpanded2"
-										allowWrapping="true"
-										content=""
-										class="sapUiTinyMarginTopBottom">
-						<m:GenericTile header="Atividades programadas"
-									subheader=""
-									state="{=${state} || 'Loaded'}"
-									
-									press="press"
-									class="sapUiTinyMarginEnd"
-									>
-							<m:TileContent unit="palestras, hands-on, hackatons etc." footer="">
-								<m:NumericContent withMargin="false"
-												value=""
-												scale=""/>
-							</m:TileContent>
-						</m:GenericTile>
-					</l:HorizontalLayout>
-				</m:VBox>
-								<m:VBox class="sapUiTinyMargin">
-					<l:HorizontalLayout id="TileContainerExpanded3"
-										allowWrapping="true"
-										content=""
-										class="sapUiTinyMarginTopBottom">
-						<m:GenericTile header="Empresas participantes"
-									subheader=""
-									state="{=${state} || 'Loaded'}"
-									
-									press="press"
-									class="sapUiTinyMarginEnd"
-									>
-							<m:TileContent unit="" footer="">
-								<m:NumericContent withMargin="false"
-												value=""
-												scale=""/>
+								<m:TileContent footer="{combinedModel>footer}">
+							<m:NumericContent withMargin="false"
+							                value="{combinedModel>kpivalue}"
+							                valueColor="{combinedModel>color}"
+							                indicator="{combinedModel>trend}"
+							                scale="{combinedModel>scale}" />
 							</m:TileContent>
 						</m:GenericTile>
 					</l:HorizontalLayout>
@@ -113,18 +72,18 @@
 				</m:HBox>
 			</m:VBox>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
-				<f:GridList id="gridList" items="{/sponsors}">
+				<f:GridList id="gridList" items="{combinedModel>/sponsors}">
 					<f:customLayout>
 						<grid:GridBasicLayout gridTemplateColumns="repeat(auto-fill, minmax(15rem, 1fr))" gridGap="1.0rem" />
 					</f:customLayout>
 					<f:GridListItem>
 						<m:VBox class="sapUiSmallMargin" wrap="Wrap" width="800px">
 							<m:HBox justifyContent="Start">
-								<m:Avatar src="{Logo}" class="sapUiSmallMarginEnd"/>
+								<m:Avatar src="{combinedModel>Logo}" class="sapUiSmallMarginEnd"/>
 								<m:VBox justifyContent="Center">
-									<m:Title text="{Empresa}" wrapping="true" />
-									<m:Label text="{Estado}" wrapping="true" />
-									<m:ObjectStatus class="styleObjectStatus" text="{= ${Empresa} === 'Lab2Dev' ? 'Patrocinador Principal' : '' }" inverted="true" state="Information"/>
+									<m:Title text="{combinedModel>Empresa}" wrapping="true" />
+									<m:Label text="{combinedModel>Estado}" wrapping="true" />
+									<m:ObjectStatus class="styleObjectStatus" text="{= ${combinedModel>Empresa} === 'Lab2Dev' ? 'Patrocinador Principal' : '' }" inverted="true" state="Information"/>
 								</m:VBox>
 							</m:HBox>
 						</m:VBox>
