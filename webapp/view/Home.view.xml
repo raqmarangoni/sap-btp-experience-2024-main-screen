@@ -11,7 +11,7 @@
 			<m:FlexBox class="textContainer" alignItems="Center" justifyContent="Center">
 				<m:Image src="../img/edificios.png" mode="Image" height="100%" width="100%" />
 				<m:VBox class="overlayTextContainer" alignItems="Center" justifyContent="Center">
-					<m:Title text="Bem vindo, Usuário!" class="overlayText" />
+					<m:Title text="Bem Vindo, {combinedModel>/userName}!" class="overlayText" />
 				</m:VBox>
 			</m:FlexBox>
 		</m:VBox>
