@@ -40,7 +40,6 @@
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<l:HorizontalLayout>
-
 					<m:VBox class="sapUiTinyMargin">
 						<l:HorizontalLayout id="RegisteredParticipantsId" allowWrapping="true" class="sapUiTinyMarginTopBottom">
 							<m:GenericTile header="Participantes confirmados por cadastro" press="onNavToRegisteredParticipants" class="sapUiTinyMarginEnd">
@@ -52,7 +51,7 @@
 					</m:VBox>
 					<m:VBox class="sapUiTinyMargin">
 						<l:HorizontalLayout id="ScheduledActivitiesId" allowWrapping="true" class="sapUiTinyMarginTopBottom">
-							<m:GenericTile header="Atividades programadas" press="press" class="sapUiTinyMarginEnd">
+							<m:GenericTile header="Atividades programadas" press="onNavToScheduledActivities" class="sapUiTinyMarginEnd">
 								<m:TileContent footer="participantes">
 									<m:NumericContent withMargin="false" value="{combinedModel>/scheduledActivities/kpivalue}" valueColor="{combinedModel>/scheduledActivities/color}" indicator="{combinedModel>/indicator}" scale="{combinedModel>/scale}" />
 								</m:TileContent>

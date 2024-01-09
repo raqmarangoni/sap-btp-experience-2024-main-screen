@@ -122,6 +122,13 @@
           "target": [
             "RegisteredParticipants"
           ]
+        },
+        {
+          "name": "ScheduledActivities",
+          "pattern": "/scheduledActivities",
+          "target": [
+            "ScheduledActivities"
+          ]
         }
       ],
       "targets": {
