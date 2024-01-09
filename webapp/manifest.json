@@ -115,6 +115,13 @@
           "target": [
             "Sponsors"
           ]
+        },
+        {
+          "name": "RegisteredParticipants",
+          "pattern": "/registeredParticipants",
+          "target": [
+            "RegisteredParticipants"
+          ]
         }
       ],
       "targets": {
@@ -131,6 +138,13 @@
           "clearControlAggregation": false,
           "viewId": "Sponsors",
           "viewName": "Sponsors"
+        },
+        "RegisteredParticipants": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "RegisteredParticipants",
+          "viewName": "RegisteredParticipants"
         }
       }
     },

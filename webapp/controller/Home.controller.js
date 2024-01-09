@@ -62,6 +62,11 @@ sap.ui.define([
 
             onNavToSponsors: function () {
                 this.getOwnerComponent().getRouter().navTo("Sponsors");
-            }
+            },
+
+            onNavToRegisteredParticipants: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
         });
     });
