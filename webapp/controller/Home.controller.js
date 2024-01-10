@@ -64,8 +64,38 @@ sap.ui.define([
                 this.getView().setModel(oModel, "combinedModel");
             },
 
+            onNavToSchedule: function () {
+                this.getOwnerComponent().getRouter().navTo("Schedule");
+            },
 
+            onNavtoRoom: function () {
+                this.getOwnerComponent().getRouter().navTo("Room");
+            },
 
+            onNavtoSponsorship: function () {
+                this.getOwnerComponent().getRouter().navTo("Sponsorship");
+            },
+
+            onNavtoCompanies: function () {
+                this.getOwnerComponent().getRouter().navTo("Companies");
+            },
+
+            onNavtoUsers: function () {
+                this.getOwnerComponent().getRouter().navTo("Users");
+            },
+
+            onNavtoCheckin: function () {
+                this.getOwnerComponent().getRouter().navTo("Checkin");
+            },
+
+            onNavToVisitorGuider: function () {
+                this.getOwnerComponent().getRouter().navTo("VisitorGuider");
+            },
+
+            onNavToSessions: function () {
+                this.getOwnerComponent().getRouter().navTo("VisitorGuider");
+            },
+            
             onNavToRegisteredParticipants: function () {
                 this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
             },
