@@ -10,7 +10,7 @@
 	<m:Page id="page" showHeader="false">
 		<m:VBox xmlns:m="sap.m" class="backgroundContainer" justifyContent="Center" alignItems="Center" height="141px" width="100%">
 			<m:FlexBox class="textContainer" alignItems="Center" justifyContent="Center">
-				<m:Image src="../img/edificios.png" mode="Image" height="100%" width="100%" />
+				<m:Image src="../img/sap-labs.png" mode="Image" height="100%" width="100%" />
 				<m:VBox class="overlayTextContainer" alignItems="Center" justifyContent="Center">
 					<m:Title text="Bem Vindo, {combinedModel>/userName}!" class="overlayText" />
 				</m:VBox>
