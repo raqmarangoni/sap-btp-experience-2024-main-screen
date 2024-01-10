@@ -50,3 +50,20 @@
     line-height: normal;
 
 }
+.customShortcuts {
+    text-align: center;
+    font-family: 72;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.customTitleShortcuts {
+    text-align: center;
+    font-family: 72;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
