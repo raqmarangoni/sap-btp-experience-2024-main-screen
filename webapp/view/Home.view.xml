@@ -24,10 +24,10 @@
                 <l:HorizontalLayout>
 					<Card width="106px" class="sapUiSmallMarginEnd" > 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardSchedule"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://accelerated" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://accelerated" press="" />
 										<Title text="Agenda" level="H6" class="customTitleShortcuts"/> 
 									</m:VBox> 
 								</content> 
@@ -36,10 +36,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardRoom"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://meeting-room" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://meeting-room" press="" />
 										<Title text="Salas" level="H6" class="customTitleShortcuts"/> 
 									</m:VBox> 
 								</content> 
@@ -48,10 +48,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardSponsorship"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://travel-expense-report" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://travel-expense-report" press="" />
 										<Title text="Patrocínio" level="H6" class="customTitleShortcuts" /> 
 									</m:VBox> 
 								</content> 
@@ -60,10 +60,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardCompanies"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://building" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://building" press="" />
 										<Title text="Empresas" level="H6" class="customTitleShortcuts"/> 
 									</m:VBox> 
 								</content> 
@@ -72,10 +72,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardUsers"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://person-placeholder" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://person-placeholder" press="" />
 										<Title text="Usuários" level="H6" class="customTitleShortcuts" /> 
 									</m:VBox> 
 								</content> 
@@ -84,10 +84,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardCheckin"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://validate" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://validate" press="" />
 										<Title text="Check in" level="H6" class="customTitleShortcuts" /> 
 									</m:VBox> 
 								</content> 
@@ -96,10 +96,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardVisitorGuider"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://map-2" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://map-2" press="" />
 										<Title text="Visitor Guider" class="customTitleShortcuts" level="H6"/> 
 									</m:VBox> 
 								</content> 
@@ -108,10 +108,10 @@
 					</Card>
 					<Card width="106px" class="sapUiSmallMarginEnd"> 
 						<List separators="None"> 
-							<CustomListItem> 
+							<CustomListItem class="customCardSessions"> 
 								<content> 
 									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin" src="sap-icon://lateness" press="" />
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://lateness" press="" />
 										<Title text="Sessões" level="H6" class="customTitleShortcuts" /> 
 									</m:VBox> 
 								</content> 
