@@ -10,6 +10,9 @@ sap.ui.define([
 
         return Controller.extend("com.lab2dev.btpexperiencemainscreen.controller.Home", {
             onInit: function () {
+
+                const userName = sap.ushell.Container.getService("UserInfo").getFirstName()
+
                 const sponsorsModel = {
                     sponsors: [
                         {
@@ -34,12 +37,49 @@ sap.ui.define([
                         },
                     ]
                 };
-                const oModel = new JSONModel(sponsorsModel);
-                this.getView().setModel(oModel);
+
+                const oFixedTileContent = {
+                    registeredParticipants:{
+                        kpivalue: 120,
+                        color: "Good"
+                    },
+                    scheduledActivities: {
+                        kpivalue: 40,
+                        color: "Good"
+                    },
+                    participatingCompanies: {
+                        kpivalue: 80,
+                        color: "Good"
+                    }
+                };
+
+                const { registeredParticipants, scheduledActivities, participatingCompanies} = oFixedTileContent
+                const oModel = new JSONModel({
+                    sponsors: sponsorsModel.sponsors,
+                    registeredParticipants,
+                    scheduledActivities,
+                    participatingCompanies,
+                    userName
+                });
+                this.getView().setModel(oModel, "combinedModel");
             },
-            
-            onNavToSponsors: function(){
+
+
+
+            onNavToRegisteredParticipants: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
+            onNavToScheduledActivities: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
+            onNavToParticipatingCompanies: function () {
+                this.getOwnerComponent().getRouter().navTo("RegisteredParticipants");
+            },
+
+            onNavToSponsors: function () {
                 this.getOwnerComponent().getRouter().navTo("Sponsors");
-            }
+            },
         });
     });

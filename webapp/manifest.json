@@ -115,6 +115,34 @@
           "target": [
             "Sponsors"
           ]
+        },
+        {
+          "name": "RegisteredParticipants",
+          "pattern": "/registeredParticipants",
+          "target": [
+            "RegisteredParticipants"
+          ]
+        },
+        {
+          "name": "ScheduledActivities",
+          "pattern": "/scheduledActivities",
+          "target": [
+            "ScheduledActivities"
+          ]
+        },
+        {
+          "name": "ScheduledActivities",
+          "pattern": "/scheduledActivities",
+          "target": [
+            "ScheduledActivities"
+          ]
+        },
+        {
+          "name": "ParticipatingCompanies",
+          "pattern": "/participatingCompanies",
+          "target": [
+            "ParticipatingCompanies"
+          ]
         }
       ],
       "targets": {
@@ -131,6 +159,13 @@
           "clearControlAggregation": false,
           "viewId": "Sponsors",
           "viewName": "Sponsors"
+        },
+        "RegisteredParticipants": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "RegisteredParticipants",
+          "viewName": "RegisteredParticipants"
         }
       }
     },

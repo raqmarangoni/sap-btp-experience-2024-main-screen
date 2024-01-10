@@ -21,3 +21,104 @@
     align-items: center;
     flex: 1 0 0;
 }
+
+.backgroundContainer {
+    position: relative;
+}
+
+.textContainer {
+    position: relative;
+}
+
+.overlayTextContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlayText {
+    z-index: 1;
+    white-space: nowrap;
+    color: #FFF;
+    text-align: center;
+    font-family: 72;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.customShortcuts {
+    text-align: center;
+    font-family: 72;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.customTitleShortcuts {
+    color: #FFF !important;
+    text-shadow: 0px 0px 0.899px rgba(0, 0, 0, 0.70);
+    text-align: center;
+    font-family: 72;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.customSvg {
+    color: #FFF
+}
+
+.customCardSchedule {
+    border-radius: 8px !important;
+    border: 1px solid #E18F56 !important;
+    background: #E18F56 !important;
+}
+
+.customCardRoom {
+    border-radius: 8px;
+    border: 1px solid #006BB6;
+    background: #006BB6;
+}
+
+.customCardSponsorship {
+    border-radius: 8px;
+    border: 1px solid #0070F2;
+    background: #0070F2;
+}
+
+.customCardCompanies {
+    border-radius: 8px;
+    border: 1px solid #00ADE8;
+    background: #00ADE8;
+}
+
+.customCardUsers {
+    border-radius: 8px;
+    border: 1px solid #AF1280;
+    background: #AF1280;
+}
+
+.customCardCheckin {
+    border-radius: 8px;
+    border: 1px solid #CB6276;
+    background: #CB6276;
+}
+
+.customCardVisitorGuider {
+    border-radius: 8px;
+    border: 1px solid #E18F56;
+    background: #E18F56;
+}
+
+.customCardSessions {
+    border-radius: 8px;
+    border: 1px solid #006BB6;
+    background: #006BB6;
+}
