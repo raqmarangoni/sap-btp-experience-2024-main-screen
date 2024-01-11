@@ -53,13 +53,29 @@ sap.ui.define([
                     }
                 };
 
+                const oFixedTileContentSchedule = {
+                    keynote:{
+                        preview: "Case: O aplicativo do SAP BTP Experience",
+                    },
+                    lecture: {
+                        preview: "Case: O aplicativo do SAP BTP Experience",
+                    },
+                    handson: {
+                        preview: 80,
+                    }
+                };
+
+                const { keynote, lecture, handson } = oFixedTileContentSchedule
                 const { registeredParticipants, scheduledActivities, participatingCompanies} = oFixedTileContent
                 const oModel = new JSONModel({
                     sponsors: sponsorsModel.sponsors,
                     registeredParticipants,
                     scheduledActivities,
                     participatingCompanies,
-                    userName
+                    userName,
+                    keynote,
+                    lecture,
+                    handson
                 });
                 this.getView().setModel(oModel, "combinedModel");
             },
