@@ -10,7 +10,7 @@
 	<m:Page id="page" showHeader="false">
 		<m:VBox xmlns:m="sap.m" class="backgroundContainer" justifyContent="Center" alignItems="Center" height="141px" width="100%">
 			<m:FlexBox class="textContainer" alignItems="Center" justifyContent="Center">
-				<m:Image src="../img/edificios.png" mode="Image" height="100%" width="100%" />
+				<m:Image src="../img/sap-labs.png" mode="Image" height="100%" width="100%" />
 				<m:VBox class="overlayTextContainer" alignItems="Center" justifyContent="Center">
 					<m:Title text="Bem Vindo, {combinedModel>/userName}!" class="overlayText" />
 				</m:VBox>
@@ -21,105 +21,105 @@
 				<m:Title class="sapUiResponsiveContentPadding" text="Atalhos" titleStyle="H4" />
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
-                <l:HorizontalLayout>
-					<Card width="106px" class="sapUiSmallMarginEnd" > 
-						<List separators="None"> 
-							<CustomListItem class="customCardSchedule"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://accelerated" press="" />
-										<Title text="Agenda" level="H6" class="customTitleShortcuts"/> 
-									</m:VBox> 
-								</content> 
+				<l:HorizontalLayout>
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardSchedule">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://accelerated" press="onNavToSchedule" />
+										<Title text="Agenda" level="H6" class="customTitleShortcuts"/>
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardRoom"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://meeting-room" press="" />
-										<Title text="Salas" level="H6" class="customTitleShortcuts"/> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardRoom">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://meeting-room" press="onNavtoRoom" />
+										<Title text="Salas" level="H6" class="customTitleShortcuts"/>
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardSponsorship"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://travel-expense-report" press="" />
-										<Title text="Patrocínio" level="H6" class="customTitleShortcuts" /> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardSponsorship">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://travel-expense-report" press="onNavtoSponsorship" />
+										<Title text="Patrocínio" level="H6" class="customTitleShortcuts" />
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardCompanies"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://building" press="" />
-										<Title text="Empresas" level="H6" class="customTitleShortcuts"/> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardCompanies">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://building" press="onNavtoCompanies" />
+										<Title text="Empresas" level="H6" class="customTitleShortcuts"/>
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardUsers"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://person-placeholder" press="" />
-										<Title text="Usuários" level="H6" class="customTitleShortcuts" /> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardUsers">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://person-placeholder" press="onNavtoUsers" />
+										<Title text="Usuários" level="H6" class="customTitleShortcuts" />
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardCheckin"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://validate" press="" />
-										<Title text="Check in" level="H6" class="customTitleShortcuts" /> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardCheckin">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://validate" press="onNavtoCheckin" />
+										<Title text="Check in" level="H6" class="customTitleShortcuts" />
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardVisitorGuider"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://map-2" press="" />
-										<Title text="Visitor Guider" class="customTitleShortcuts" level="H6"/> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardVisitorGuider">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://map-2" press="onNavToVisitorGuider" />
+										<Title text="Visitor Guider" class="customTitleShortcuts" level="H6"/>
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd"> 
-						<List separators="None"> 
-							<CustomListItem class="customCardSessions"> 
-								<content> 
-									<m:VBox alignItems="Center" width="100%"> 
-										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://lateness" press="" />
-										<Title text="Sessões" level="H6" class="customTitleShortcuts" /> 
-									</m:VBox> 
-								</content> 
+					<Card width="106px" class="sapUiSmallMarginEnd">
+						<List separators="None">
+							<CustomListItem class="customCardSessions">
+								<content>
+									<m:VBox alignItems="Center" width="100%">
+										<core:Icon size="26px" class="sapUiTinyMargin customSvg" src="sap-icon://lateness" press="onNavToSessions" />
+										<Title text="Sessões" level="H6" class="customTitleShortcuts" />
+									</m:VBox>
+								</content>
 							</CustomListItem>
-						</List> 
+						</List>
 					</Card>
 				</l:HorizontalLayout>
-            </m:Panel>
+			</m:Panel>
 			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
 				<m:Title class="" text="Resumo" titleStyle="H4" />
 			</l:VerticalLayout>
@@ -186,6 +186,39 @@
 			<l:VerticalLayout class="sapUiContentPadding sapUiResponsiveContentPadding sapUiNoMargin" width="auto">
 				<m:Title class="" text="Próximas Agendas" titleStyle="H4" />
 			</l:VerticalLayout>
+			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
+				<l:HorizontalLayout>
+					<m:VBox class="sapUiTinyMarginEnd">
+						<l:VerticalLayout >
+							<m:GenericTile header="{combinedModel>/keynote/type}" subheader="{combinedModel>/keynote/preview}" press="onNavToSessionsDetail">
+								<m:TileContent >
+									<m:VBox>
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/keynote/icon}"/>
+									</m:VBox>
+								</m:TileContent>
+							</m:GenericTile>
+						</l:VerticalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMarginEnd">
+						<l:VerticalLayout >
+							<m:GenericTile header="{combinedModel>/lecture/type}" subheader="{combinedModel>/lecture/preview}" press="">
+								<m:TileContent>
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/lecture/icon}"/>
+								</m:TileContent>
+							</m:GenericTile>
+						</l:VerticalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMarginEnd">
+						<l:VerticalLayout>
+							<m:GenericTile header="{combinedModel>/handsOn/type}" subheader="{combinedModel>/handsOn/preview}" press="">
+								<m:TileContent>					
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/handsOn/icon}"/>
+								</m:TileContent>
+							</m:GenericTile>
+						</l:VerticalLayout>
+					</m:VBox>
+				</l:HorizontalLayout>
+			</m:Panel>
 		</m:content>
 	</m:Page>
 </mvc:View>

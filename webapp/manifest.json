@@ -131,17 +131,73 @@
           ]
         },
         {
-          "name": "ScheduledActivities",
-          "pattern": "/scheduledActivities",
-          "target": [
-            "ScheduledActivities"
-          ]
-        },
-        {
           "name": "ParticipatingCompanies",
           "pattern": "/participatingCompanies",
           "target": [
             "ParticipatingCompanies"
+          ]
+        },
+        {
+          "name": "Schedule",
+          "pattern": "/Schedule",
+          "target": [
+            "Schedule"
+          ]
+        },
+        {
+          "name": "Room",
+          "pattern": "/Room",
+          "target": [
+            "Room"
+          ]
+        },
+        {
+          "name": "Sponsorship",
+          "pattern": "/Sponsorship",
+          "target": [
+            "Sponsorship"
+          ]
+        },
+        {
+          "name": "Companies",
+          "pattern": "/Companies",
+          "target": [
+            "Companies"
+          ]
+        },
+        {
+          "name": "Users",
+          "pattern": "/Users",
+          "target": [
+            "Users"
+          ]
+        },
+        {
+          "name": "Checkin",
+          "pattern": "/Checkin",
+          "target": [
+            "Checkin"
+          ]
+        },
+        {
+          "name": "VisitorGuider",
+          "pattern": "/VisitorGuider",
+          "target": [
+            "VisitorGuider"
+          ]
+        },
+        {
+          "name": "Sessions",
+          "pattern": "/Sessions",
+          "target": [
+            "Sessions"
+          ]
+        },
+        {
+          "name": "SessionsDetail",
+          "pattern": "/SessionsDetail",
+          "target": [
+            "SessionsDetail"
           ]
         }
       ],
@@ -166,6 +222,69 @@
           "clearControlAggregation": false,
           "viewId": "RegisteredParticipants",
           "viewName": "RegisteredParticipants"
+        },
+        "Schedule": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Schedule",
+          "viewName": "Schedule"
+        },
+        "Room": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Room",
+          "viewName": "Room"
+        },
+        "Sponsorship": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Sponsorship",
+          "viewName": "Sponsorship"
+        },
+        "Companies": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Companies",
+          "viewName": "Companies"
+        },
+        "Users": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Users",
+          "viewName": "Users"
+        },
+        "Checkin": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Checkin",
+          "viewName": "Checkin"
+        },
+        "VisitorGuider": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "VisitorGuider",
+          "viewName": "VisitorGuider"
+        },
+        "Sessions": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Sessions",
+          "viewName": "Sessions"
+        },
+        "SessionsDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "SessionsDetail",
+          "viewName": "SessionsDetail"
         }
       }
     },
