@@ -51,12 +51,9 @@
 
 }
 
-.customShortcuts {
-    text-align: center;
-    font-family: 72;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.customCardSquareEdges {
+    border-radius: 5px !important; /* Ajuste conforme necessário para obter bordas mais ou menos quadradas */
+    overflow: hidden !important;   /* Certifique-se de que o conteúdo do card não ultrapasse as bordas */
 }
 
 .customTitleShortcuts {
