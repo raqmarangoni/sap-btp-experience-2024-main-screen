@@ -192,6 +192,13 @@
           "target": [
             "Sessions"
           ]
+        },
+        {
+          "name": "SessionsDetail",
+          "pattern": "/SessionsDetail",
+          "target": [
+            "SessionsDetail"
+          ]
         }
       ],
       "targets": {
@@ -271,6 +278,13 @@
           "clearControlAggregation": false,
           "viewId": "Sessions",
           "viewName": "Sessions"
+        },
+        "SessionsDetail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "SessionsDetail",
+          "viewName": "SessionsDetail"
         }
       }
     },

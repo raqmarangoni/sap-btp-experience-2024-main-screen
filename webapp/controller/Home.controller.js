@@ -134,5 +134,8 @@ sap.ui.define([
                 this.getOwnerComponent().getRouter().navTo("Sponsors");
             },
 
+            onNavToSessionsDetail: function () {
+                this.getOwnerComponent().getRouter().navTo("SessionsDetail");
+            }, 
         });
     });
