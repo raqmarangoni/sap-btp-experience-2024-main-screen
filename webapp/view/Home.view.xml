@@ -8,9 +8,22 @@
 	xmlns:t="sap.tnt"
 	xmlns="sap.ui.webc.main" height="100%">
 	<m:Page id="page" showHeader="false">
+	        <m:IconTabBar class="sapUiResponsiveContentPadding sapUiNoContentPadding" select="onTabSelect" applyContentPadding="false" expanded="false">
+            <m:layoutData>
+				<m:OverflowToolbarLayoutData priority="NeverOverflow" shrinkable="true"/>
+			</m:layoutData>
+			<m:items>
+                <m:IconTabFilter key="" text="Cadastro">
+                </m:IconTabFilter>
+                <m:IconTabFilter key="" text="Administração">
+                </m:IconTabFilter>
+                <m:IconTabFilter key="" text="Relatórios">
+                </m:IconTabFilter>
+            </m:items>
+        </m:IconTabBar>
 		<m:VBox xmlns:m="sap.m" class="backgroundContainer" justifyContent="Center" alignItems="Center" height="141px" width="100%">
 			<m:FlexBox class="textContainer" alignItems="Center" justifyContent="Center">
-				<m:Image src="../img/sap-labs.png" mode="Image" height="100%" width="100%" />
+				<m:Image src="../img/sap-labs-btp.png" mode="Image" height="100%" width="100%" />
 				<m:VBox class="overlayTextContainer" alignItems="Center" justifyContent="Center">
 					<m:Title text="Bem Vindo, {combinedModel>/userName}!" class="overlayText" />
 				</m:VBox>
@@ -22,7 +35,7 @@
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<l:HorizontalLayout>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardSchedule">
 								<content>
@@ -34,7 +47,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardRoom">
 								<content>
@@ -46,7 +59,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardSponsorship">
 								<content>
@@ -58,7 +71,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardCompanies">
 								<content>
@@ -70,7 +83,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardUsers">
 								<content>
@@ -82,7 +95,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardCheckin">
 								<content>
@@ -94,7 +107,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardVisitorGuider">
 								<content>
@@ -106,7 +119,7 @@
 							</CustomListItem>
 						</List>
 					</Card>
-					<Card width="106px" class="sapUiSmallMarginEnd">
+					<Card width="110px" class="sapUiTinyMarginEnd customCardSquareEdges">
 						<List separators="None">
 							<CustomListItem class="customCardSessions">
 								<content>
@@ -172,7 +185,7 @@
 					<f:GridListItem>
 						<m:VBox class="sapUiSmallMargin" wrap="Wrap" width="800px">
 							<m:HBox justifyContent="Start">
-								<m:Avatar src="{combinedModel>Logo}" class="sapUiSmallMarginEnd"/>
+								<m:Avatar displaySize="M" src="{combinedModel>Logo}" class="sapUiSmallMarginEnd"/>
 								<m:VBox justifyContent="Center">
 									<m:Title text="{combinedModel>Empresa}" wrapping="true" />
 									<m:Label text="{combinedModel>Estado}" wrapping="true" />
@@ -188,7 +201,7 @@
 			</l:VerticalLayout>
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<l:HorizontalLayout>
-					<m:VBox class="sapUiTinyMarginEnd">
+					<m:VBox class="sapUiSmallMarginEnd">
 						<l:VerticalLayout >
 							<m:GenericTile header="{combinedModel>/keynote/type}" subheader="{combinedModel>/keynote/preview}" press="onNavToSessionsDetail">
 								<m:TileContent >
@@ -199,20 +212,20 @@
 							</m:GenericTile>
 						</l:VerticalLayout>
 					</m:VBox>
-					<m:VBox class="sapUiTinyMarginEnd">
+					<m:VBox class="sapUiSmallMarginEnd">
 						<l:VerticalLayout >
 							<m:GenericTile header="{combinedModel>/lecture/type}" subheader="{combinedModel>/lecture/preview}" press="">
 								<m:TileContent>
-										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/lecture/icon}"/>
+									<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/lecture/icon}"/>
 								</m:TileContent>
 							</m:GenericTile>
 						</l:VerticalLayout>
 					</m:VBox>
-					<m:VBox class="sapUiTinyMarginEnd">
+					<m:VBox class="sapUiSmallMarginEnd">
 						<l:VerticalLayout>
 							<m:GenericTile header="{combinedModel>/handsOn/type}" subheader="{combinedModel>/handsOn/preview}" press="">
-								<m:TileContent>					
-										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/handsOn/icon}"/>
+								<m:TileContent>
+									<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/handsOn/icon}"/>
 								</m:TileContent>
 							</m:GenericTile>
 						</l:VerticalLayout>
