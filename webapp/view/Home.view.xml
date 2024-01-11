@@ -189,13 +189,33 @@
 			<m:Panel width="auto" backgroundDesign="Transparent" class="sapUiResponsiveContentPadding sapUiContentPadding">
 				<l:HorizontalLayout>
 					<m:VBox class="sapUiTinyMarginEnd">
-						<l:HorizontalLayout id="RegisteredParticipantsId2" allowWrapping="true" class="sapUiTinyMarginTopBottom">
-							<m:GenericTile header="Keynote" subheader="{combinedModel>/keynote/preview}" press="onNavToRegisteredParticipants" class="sapUiTinyMarginEnd">
+						<l:VerticalLayout >
+							<m:GenericTile header="{combinedModel>/keynote/type}" subheader="{combinedModel>/keynote/preview}" press="">
 								<m:TileContent>
-									<m:ImageContent src="sap-icon://home-share" />
+									<m:VBox>
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/keynote/icon}"/>
+									</m:VBox>
 								</m:TileContent>
 							</m:GenericTile>
-						</l:HorizontalLayout>
+						</l:VerticalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMarginEnd">
+						<l:VerticalLayout >
+							<m:GenericTile header="{combinedModel>/lecture/type}" subheader="{combinedModel>/lecture/preview}" press="">
+								<m:TileContent>
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/lecture/icon}"/>
+								</m:TileContent>
+							</m:GenericTile>
+						</l:VerticalLayout>
+					</m:VBox>
+					<m:VBox class="sapUiTinyMarginEnd">
+						<l:VerticalLayout>
+							<m:GenericTile header="{combinedModel>/handsOn/type}" subheader="{combinedModel>/handsOn/preview}" press="">
+								<m:TileContent>					
+										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/handsOn/icon}"/>
+								</m:TileContent>
+							</m:GenericTile>
+						</l:VerticalLayout>
 					</m:VBox>
 				</l:HorizontalLayout>
 			</m:Panel>

@@ -54,18 +54,24 @@ sap.ui.define([
                 };
 
                 const oFixedTileContentSchedule = {
-                    keynote:{
-                        preview: "Case: O aplicativo do SAP BTP Experience",
+                    keynote: {
+                        type: "Keynote",
+                        preview: "“Case: O aplicativo do SAP BTP Experience”",
+                        icon: 'sap-icon://microphone'
                     },
                     lecture: {
-                        preview: "Case: O aplicativo do SAP BTP Experience",
+                        type: "Lecture",
+                        preview: "“A importância do UX na Tecnologia da Informação”",
+                        icon: 'sap-icon://tag-cloud-chart'
                     },
-                    handson: {
-                        preview: 80,
+                    handsOn: {
+                        type: "Hands-On",
+                        preview: "“Prototipando apli cações Fiori SAPUI5”",
+                        icon: "sap-icon://decision" 
                     }
                 };
 
-                const { keynote, lecture, handson } = oFixedTileContentSchedule
+                const { keynote, lecture, handsOn } = oFixedTileContentSchedule
                 const { registeredParticipants, scheduledActivities, participatingCompanies} = oFixedTileContent
                 const oModel = new JSONModel({
                     sponsors: sponsorsModel.sponsors,
@@ -75,7 +81,7 @@ sap.ui.define([
                     userName,
                     keynote,
                     lecture,
-                    handson
+                    handsOn
                 });
                 this.getView().setModel(oModel, "combinedModel");
             },
@@ -109,7 +115,7 @@ sap.ui.define([
             },
 
             onNavToSessions: function () {
-                this.getOwnerComponent().getRouter().navTo("VisitorGuider");
+                this.getOwnerComponent().getRouter().navTo("Sessions");
             },
             
             onNavToRegisteredParticipants: function () {
@@ -127,5 +133,6 @@ sap.ui.define([
             onNavToSponsors: function () {
                 this.getOwnerComponent().getRouter().navTo("Sponsors");
             },
+
         });
     });
