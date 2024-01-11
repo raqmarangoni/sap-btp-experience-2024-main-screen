@@ -190,8 +190,8 @@
 				<l:HorizontalLayout>
 					<m:VBox class="sapUiTinyMarginEnd">
 						<l:VerticalLayout >
-							<m:GenericTile header="{combinedModel>/keynote/type}" subheader="{combinedModel>/keynote/preview}" press="">
-								<m:TileContent>
+							<m:GenericTile header="{combinedModel>/keynote/type}" subheader="{combinedModel>/keynote/preview}" press="onNavToSessionsDetail">
+								<m:TileContent >
 									<m:VBox>
 										<m:ImageContent class="sapUiMediumMarginTop" src="{combinedModel>/keynote/icon}"/>
 									</m:VBox>
